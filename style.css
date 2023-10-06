@@ -1,0 +1,229 @@
+/* Reset styles for all elements to have no margin, padding, border, and no outline */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+/* Style for the entire web page body */
+body{
+    /* Set the height of the body to fill the entire viewport (100%) */
+    height: 100vh;
+    display: flex;
+    /* Center content vertically and horizontally */
+    align-items: center;
+    justify-content: center;
+    /* Set the background color to a dark blue */
+    background: #06283D;
+}
+/* Style for the container that holds the weather information */
+.container{
+    /* Create a box with rounded corners */
+    border-radius: 18px;
+    position: relative;
+    /* Define the width and height of the container */
+    width: 400px;
+    height: 105px;
+    background: #fff;
+    /* Add padding and hide overflow content */
+    padding: 28px 32px;
+    overflow: hidden;
+    border-radius: 18px;
+    /* Use the 'Roboto' font and add a transition effect */
+    font-family: 'Roboto', sans-serif;
+    transition: 0.6s ease-out;
+}
+/* Style for the search box section */
+.search-box{
+    /* Expand to full width and adjust height automatically */
+    width: 100%;
+    height: min-content;
+    /* Arrange items horizontally with space in between */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Style for the location input field */
+.search-box input{
+    /* Set text color */
+    color: #06283D;
+    /* Define font size and weight */
+    width: 80%;
+    /* Define font size and weight */
+    font-size: 24px;
+    font-weight: 500;
+    /* Convert text to uppercase */
+    text-transform: uppercase;
+    padding-left: 32px;
+}
+/* Style for input placeholder text */
+.search-box input::placeholder{
+    /* Define font size, weight, and color */
+    font-size: 20px;
+    font-weight: 500;
+    color: #06283D;
+    /* Capitalize the placeholder text */
+    text-transform: capitalize;
+}
+/* Style for the search button */
+.search-box button{
+    /* Change cursor to a pointer on hover */
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    /* Define text color and background color with transition effect */
+    color: #06283D;
+    background: #dff6ff;
+     /* Create a circular button */
+    border-radius: 50%;
+    /* Define font size and transition duration */
+    font-size: 22px;
+    transition: 0.4s ease;
+}
+/* Style for the search button on hover */
+.search-box button:hover{
+    /* Change text and background color on hover */
+    color: #fff;
+    background: #06283D;
+}
+/* Style for the location icon */
+.search-box i{
+     /* Set icon position, color, and size */
+    position: absolute;
+    color: #06283D;
+    font-size: 28px;
+}
+/* Style for the weather box section */
+.weather-box{
+    /* Center-align text within the weather box */
+    text-align: center;
+}
+/* Style for the weather image */
+.weather-box img{
+    /* Set the image width to 60% and add top margin */
+    width: 60%;
+    margin-top: 30px;
+}
+/* Style for the temperature text */
+.weather-box .temperature{
+    position: relative;
+     /* Set text color, font size, and weight */
+    color: #06283D;
+    font-size: 4rem;
+    font-weight: 800;
+    /* Add top margin and adjust left margin */
+    margin-top: 30px;
+    margin-left: -16px;
+}
+/* Style for the temperature unit (e.g., °C) */
+.weather-box .temperature span{
+     /* Position the unit text and adjust left margin */
+    position: absolute;
+    margin-left: 4px;
+     /* Define font size for the unit text */
+    font-size: 1.5rem;
+}
+/* Style for the weather description text */
+.weather-box .description{
+    /* Set text color, font size, weight, and capitalize text */
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+/* Style for the weather details section */
+.weather-details{
+    /* Expand to full width and arrange items with space in between */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* Add top margin */
+    margin-top: 30px;
+}
+/* Style for the humidity and wind sections */
+.weather-details .humidity, .weather-details .wind{
+     /* Arrange items horizontally and center-align them */
+    display: flex;
+    align-items: center;
+     /* Divide the width evenly between the sections */
+    width: 50%;
+    height: 100px;
+}
+/* Style for the humidity section */
+.weather-details .humidity{
+    /* Add left padding and arrange items to the left */
+    width: 20%;
+    padding-left: 0%;
+    justify-content: flex-start;
+}
+/* Style for the wind section */
+.weather-details .wind{
+    /* Add right padding and arrange items to the right */
+    width: 20%;
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+/* Style for icons in the weather details sections */
+.weather-details i{
+      /* Set icon color, size, and right margin */
+    color: #06283D;
+    font-size: 26px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+/* Style for the span elements in the weather details sections */
+.weather-details span{
+     /* Set text color, font size, and weight */
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
+}
+/* Style for the paragraph elements in the weather details sections */
+.weather-details p{
+    /* Set text color, font size, and weight */
+    color: #06283D;
+    font-size: 14px;
+    font-weight: 500;
+}
+/* Style for the "not-found" section */
+.not-found{
+    /* Expand to full width, center-align text, and add top margin */
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    /* Initially hide the element */
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+/* Style for the image in the "not-found" section */
+.not-found img{
+    /* Set image width to 70% */
+    width: 70%;
+}
+/* Style for text in the "not-found" section */
+.not-found p{
+     /* Set text color, font size, weight, and add top margin */
+    color: #06283D;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+/* Apply animation to the weather box and details with a fade-in effect */
+.weather-box, .weather-details{
+    scale: 0;
+    opacity: 0;
+}
+/* Keyframes for the fade-in animation */
+.fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+/* Keyframes to gradually increase scale and opacity */
+@keyframes fadeIn{
+    to {
+        scale: 1;
+        opacity: 1;
+    }
+}

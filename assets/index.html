@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- This section contains meta information about the document -->
+    <meta charset="UTF-8"> <!-- Defines character encoding -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensures compatibility with Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets viewport for responsive design -->
+    
+    <!-- Link to Google Fonts stylesheets for custom fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Title of the web page displayed in the browser tab -->
+    <title>Weather App</title>
+</head>
+
+<body>
+    <!-- The main content of the web page starts here -->
+    
+    <!-- Container div that holds all the elements of the weather app -->
+    <div class="container">
+        <!-- Search box for entering the location -->
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i> <!-- Location icon -->
+            <input type="text" placeholder="Enter your location" value="Peshawar"> <!-- Input field for location with default value "Peshawar" -->
+            <button class="fa-solid fa-magnifying-glass"></button> <!-- Search button -->
+        </div>
+
+        <!-- Displayed when an invalid location is entered -->
+        <div class="not-found">
+            <img src="404.png"> <!-- Image for error -->
+            <p>Oops! Invalid location :/</p> <!-- Error message -->
+        </div>
+
+        <!-- Box for displaying weather information -->
+        <div class="weather-box">
+            <img src=""> <!-- Image for weather condition -->
+            <p class="temperature"></p> <!-- Temperature display -->
+            <p class="description"></p> <!-- Weather description -->
+        </div>
+
+        <!-- Details of weather conditions like humidity and wind speed -->
+        <div class="weather-details">
+            <div class="humidity">
+                <img src="Humidity.svg" alt="Humidity Icon"> <!-- Humidity image -->
+                <div class="text">
+                    <span></span> <!-- Humidity value -->
+                    <p>Humidity</p> <!-- Label for humidity -->
+                </div>
+            </div>
+           <!-- Wind speed information -->
+            <div class="wind">
+                <img src="wind.svg" alt="Wind Speed Icon"> <!-- Wind speed image -->
+                <div class="text">
+                  <span></span> <!-- Wind speed value -->
+                  <p>Wind Speed</p> <!-- Label for wind speed -->
+            </div>
+</div>
+
+        </div>
+    </div> <!-- Closing container div -->
+
+    <!-- Link to Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    
+    <!-- Link to JavaScript file for dynamic functionality -->
+    <script src="script.js"></script>
+</body>
+
+</html>
